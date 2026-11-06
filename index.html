@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>For you</title>
+<meta name="theme-color" content="#fbf3ec">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400;1,600&family=Caveat:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="petals" aria-hidden="true"></canvas>
+
+<section id="cover" class="screen on">
+  <p class="soft" id="coverLine"></p>
+  <h1 id="coverTitle"></h1>
+  <button class="btn" id="begin">Open</button>
+</section>
+
+<section id="lock" class="screen">
+  <p class="soft">Enter the passkey</p>
+  <div class="dots" id="dots"><i></i><i></i><i></i><i></i></div>
+  <div class="pad" id="pad"></div>
+  <p class="soft hint" id="hint"></p>
+</section>
+
+<main id="site" hidden></main>
+
+<div id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lb-x" aria-label="Close">&times;</button>
+  <button class="lb-n prev" aria-label="Previous">&lsaquo;</button>
+  <figure><img alt=""><figcaption></figcaption></figure>
+  <button class="lb-n next" aria-label="Next">&rsaquo;</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
